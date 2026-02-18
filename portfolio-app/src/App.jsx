@@ -12,9 +12,8 @@ function App() {
         <div className="app-width-container">
           <main className="main-content">
             <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/portfolio" element={<HomePage />} />
-              <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/portfolio/" element={<HomePage />} />
+              <Route path="/portfolio/projects/" element={<ProjectsPage />} />
             </Routes>
           </main>
         </div>
