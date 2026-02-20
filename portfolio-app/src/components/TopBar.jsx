@@ -24,6 +24,7 @@ const TopBar = () => {
                 <div className="nav-links desktop-links">
                     <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink>
                     <NavLink to="/projects" className={({ isActive }) => (isActive ? 'active' : '')}>Projects</NavLink>
+                    <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>Contact</NavLink>
                 </div>
 
                 <button className="burger-btn" onClick={toggleMenu} aria-label="Toggle menu">
@@ -36,6 +37,7 @@ const TopBar = () => {
             <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
                 <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')} onClick={closeMenu}>Home</NavLink>
                 <NavLink to="/projects" className={({ isActive }) => (isActive ? 'active' : '')} onClick={closeMenu}>Projects</NavLink>
+                <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')} onClick={closeMenu}>Contact</NavLink>
             </div>
         </>
     );

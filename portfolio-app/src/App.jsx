@@ -2,8 +2,10 @@ import { Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import './theme/colors.css';
 import TopBar from './components/topBar';
-import HomePage from './pages/HomePage';
-import ProjectsPage from './pages/ProjectsPage';
+import HomePage from './pages/HomePage/HomePage';
+import ProjectsPage from './pages/Projectspage/ProjectsPage';
+import Project1 from './pages/Projects/testProject/testpage';
+import ContactPage from './pages/ContactPage/ContactPage';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/projects/" element={<ProjectsPage />} />
+              <Route path="/projects/project-1" element={<Project1 />} />
+              <Route path="/contact/" element={<ContactPage />} />
             </Routes>
           </main>
         </div>
