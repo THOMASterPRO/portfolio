@@ -1,38 +1,57 @@
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import './TopBar.css';
 import logo from '../assets/logo.svg';
+import { useLocation } from 'react-router-dom';
 import { useI18n } from '../i18n/I18nProvider';
 import { useT } from '../i18n/useT';
+import PillNav from './PillNav';
+import './PillNav.css';
 
 const TopBar = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+    const location = useLocation();
     const { language, setLanguage } = useI18n();
     const t = useT('common');
 
-    const toggleMenu = () => setMenuOpen(!menuOpen);
-    const closeMenu = () => setMenuOpen(false);
     const toggleLanguage = () => setLanguage(language === 'en' ? 'nl' : 'en');
+    const navItems = [
+        { label: t('topbar.nav.home'), href: '/' },
+        // { label: t('topbar.nav.projects'), href: '/projects' },
+        { label: t('topbar.nav.contact'), href: '/contact' }
+    ];
+
+    const activeHref =
+        navItems.find(item =>
+            location.pathname === item.href ||
+            (item.href !== '/' && location.pathname.startsWith(`${item.href}/`))
+        )?.href || '/';
 
     return (
         <>
             <nav className="top-bar">
-                <div className="top-bar-brand">
-                    <img src={logo} alt="Logo" className="top-bar-icon" />
-                    
-                </div>
+                <PillNav
+                    logo={logo}
+                    logoAlt="Company Logo"
+                    items={navItems}
+                    activeHref={activeHref}
+                    className="custom-nav"
+                    ease="power2.easeOut"
+                    baseColor="#000000"
+                    pillColor="#ffffff"
+                    hoveredPillTextColor="#ffffff"
+                    pillTextColor="#000000"
+                    mobileLanguageButton={(
+                        <button
+                            className="language-btn"
+                            onClick={toggleLanguage}
+                            aria-label={t('topbar.language.label')}
+                        >
+                            {language.toUpperCase()}
+                        </button>
+                    )}
+                    theme="light"
+                    initialLoadAnimation={false}
+                />
 
-                <div>
-                    <span className="top-bar-title">{t('topbar.name')}</span>
-                </div>
-
-                <div className="nav-links desktop-links">
-                    <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>{t('topbar.nav.home')}</NavLink>
-                    <NavLink to="/projects" className={({ isActive }) => (isActive ? 'active' : '')}>{t('topbar.nav.projects')}</NavLink>
-                    <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>{t('topbar.nav.contact')}</NavLink>
-                </div>
-
-                <div className="top-bar-actions">
+                <div className="top-bar-actions topbar-desktop-only">
                     <button
                         className="language-btn"
                         onClick={toggleLanguage}
@@ -41,19 +60,7 @@ const TopBar = () => {
                         {language.toUpperCase()}
                     </button>
                 </div>
-
-                <button className="burger-btn" onClick={toggleMenu} aria-label={t('topbar.menuToggle')}>
-                    <span className={`burger-icon ${menuOpen ? 'open' : ''}`}></span>
-                </button>
             </nav>
-
-            {menuOpen && <div className="mobile-overlay" onClick={closeMenu}></div>}
-
-            <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
-                <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')} onClick={closeMenu}>{t('topbar.nav.home')}</NavLink>
-                <NavLink to="/projects" className={({ isActive }) => (isActive ? 'active' : '')} onClick={closeMenu}>{t('topbar.nav.projects')}</NavLink>
-                <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')} onClick={closeMenu}>{t('topbar.nav.contact')}</NavLink>
-            </div>
         </>
     );
 };

@@ -1,3 +1,65 @@
 {
-  "pageTitle": "Home"
+  "pageTitle": "Thomas Bezemer",
+  "imageAlt": "Portret foto Thomas Bezemer",
+  "subTitles": {
+    "profile": "Profiel",
+    "programming": "Programming",
+    "itMethods": "IT Methodes",
+    "design": "Design Tools",
+    "ai": "AI",
+    "work": "Werk Ervaring",
+    "education": "Educatie" 
+  },
+  "profileText": "Als student Creative Media and Game Technologies aan Hogeschool Rotterdam ben ik gepassioneerd over het ontwikkelen van moderne applicaties, met name in React en React Native. Tijdens mijn opleiding heb ik van zowel Front- als Back-End kanten van web en mobile development veel dingen geleerd. Ik heb daarnaast veel vaardigheden opgedaan waardoor ik mezelf als creatieve en ondernemende technoloog zou omschrijven. Hieronder valt bijvoorbeeld uitgebreid onderzoek naar de doelgroep, het product en de markt. Ook ben ik erg leergierig en vind ik het leuk mezelf uit te dagen om nieuwe kennis en ervaring op te doen.",
+  "programmingText": {
+    "1": "React (Native)",
+    "2": "PHP",
+    "3": "JS",
+    "4": "HTML/CSS",
+    "5": "C#",
+    "6": "Unity"
+  },
+  "itMethodsText": {
+    "1": "Agile",
+    "2": "Scrum",
+    "3": "Git"
+  },
+  "designText": {
+    "1": "Figma",
+    "2": "Adobe Photoshop",
+    "3": "Blender 3D"
+  },
+  "aiText": {
+    "1": "ChatGPT",
+    "2": "Claude"
+  },
+  "workText": {
+    "1": {
+      "title": "Dept Agency - Stagiair Drupal Development",
+      "duration": "September 2022 - Februari 2023",
+      "description": "Ik was verantwoordelijk voor het ontwikkelen van server caching functionaliteit op de site van Bastion Hotels. Dit deed ik in PHP framework Drupal. Ik heb samen met mijn stagebegeleider de code van de site doorzocht, onderzoek gedaan naar caching, de functie toegevoegd en uitgebreid getest."
+    },
+    "2": {
+      "title": "Hanos Delft - Medewerker AGF",
+      "duration": "Maart 2024 - Heden",
+      "description": "Als medewerker AGF stond ik altijd klaar om klanten te helpen met al hun vragen over de producten op de afdeling. Communicatie met klanten en collega’s stond centraal. Daarbovenop kwam kwaliteitswaarborging van de producten dagelijks aan bod."
+    }
+  },
+  "educationText": {
+    "1": {
+      "title": "Creative Media and Game Technologies",
+      "duration": "Verwachte afstudeerdatum: Februari 2027",
+      "institute": "Hogeschool Rotterdam"
+    },
+    "2": {
+      "title": "Propedeuse Creative Media and Game Technologies",
+      "duration": "2022",
+      "institute": "Hogeschool Rotterdam"
+    },
+    "3": {
+      "title": "Cambridge Track - FCE",
+      "duration": "2018",
+      "institute": "Stanislascollege Westplantsoen"
+    }
+  }
 }

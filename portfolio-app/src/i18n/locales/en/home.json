@@ -1,3 +1,65 @@
 {
-  "pageTitle": "Home"
+  "pageTitle": "Thomas Bezemer",
+  "imageAlt": "Portrait photo Thomas Bezemer",
+  "subTitles": {
+    "profile": "Profile",
+    "programming": "Programming",
+    "itMethods": "IT Methodology",
+    "design": "Design Tools",
+    "ai": "AI",
+    "work": "Work Experience",
+    "education": "Education" 
+  },
+  "profileText": "As a Creative Media and Game Technologies student at Rotterdam University of Applied Sciences, I am passionate about developing modern applications, particularly in React and React Native. During my studies, I have learned a great deal about both the front-end and back-end aspects of web and mobile development. I have also developed many skills that allow me to describe myself as a creative and entrepreneurial technologist. This includes, for example, conducting in-depth research into the target audience, the product, and the market. I am also very eager to learn and enjoy challenging myself to gain new knowledge and experience.",
+  "programmingText": {
+    "1": "React (Native)",
+    "2": "PHP",
+    "3": "JS",
+    "4": "HTML/CSS",
+    "5": "C#",
+    "6": "Unity"
+  },
+  "itMethodsText": {
+    "1": "Agile",
+    "2": "Scrum",
+    "3": "Git"
+  },
+  "designText": {
+    "1": "Figma",
+    "2": "Adobe Photoshop",
+    "3": "Blender 3D"
+  },
+  "aiText": {
+    "1": "ChatGPT",
+    "2": "Claude"
+  },
+  "workText": {
+    "1": {
+      "title": "Dept Agency - Intern Drupal Development",
+      "duration": "September 2022 - Februari 2023",
+      "description": "I was responsible for developing server-side caching functionality on the Bastion Hotels website. I did this using the PHP framework Drupal. Together with my internship supervisor, I reviewed the site’s code, conducted research on caching, implemented the feature, and thoroughly tested it."
+    },
+    "2": {
+      "title": "Hanos Delft - Medewerker AGF",
+      "duration": "March 2024 - Present",
+      "description": "As a produce (fruit and vegetables) employee, I was always ready to help customers with all their questions about the products in the department. Communication with customers and colleagues was central. In addition, ensuring the quality of the products was a daily responsibility."
+    }
+  },
+  "educationText": {
+    "1": {
+      "title": "Creative Media and Game Technologies",
+      "duration": "Expected graduation: Februari 2027",
+      "institute": "Rotterdam University of Applied Sciences"
+    },
+    "2": {
+      "title": "Propedeuse Creative Media and Game Technologies",
+      "duration": "2022",
+      "institute": "Rotterdam University of Applied Sciences"
+    },
+    "3": {
+      "title": "Cambridge Track - FCE",
+      "duration": "2018",
+      "institute": "Stanislascollege Westplantsoen"
+    }
+  }
 }

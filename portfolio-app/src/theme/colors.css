@@ -1,15 +1,17 @@
 :root {
-  --primary: #007AFF;
-  --background: #0c0c0c;
+  --primary: #f2511b;
+  --background: #ffffff;
   --content: #2C2C2C;
-  --header: #000000;
+  --header: #f0f0f0;
   --burger: #0a0a0a;
   --block: #272727;
   --info: #232323;
+  --h3: #a0a0a0;
   --active: #1c1c1c;
   --accent: #ffffff;
   --current: #333333;
-  --text: #fff;
+  --text: #000;
+  --text-navbar: #fff;
   --textInv: #000;
   --floating: #363636;
   --text-secondary: #e0e0e0;
