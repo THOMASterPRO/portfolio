@@ -1,5 +1,5 @@
 import './TopBar.css';
-import logo from '../assets/logo.svg';
+import logo from '../assets/tbLogo.svg';
 import { useLocation } from 'react-router-dom';
 import { useI18n } from '../i18n/I18nProvider';
 import { useT } from '../i18n/useT';
